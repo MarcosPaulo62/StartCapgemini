@@ -6,7 +6,20 @@
     </head>
     <body>
         <form method="get" action="https://www.google.com/search">
-            <input type="text" name="q">
+            <input type="text" name="q" placeholder="vazio">
+            <input type="password" name="senha">
+            <input type="hidden" name="invisivel" value="valor"> <!--Campo invisível, pode carregar um value para ser encaminhado na query-->
+            <input type="email" name="email">
+            <input type="search" name="busca">
+            <input type="tel" name="telefone">
+            <input type="number" name="numeros">
+            <input type="url" name="endereco url">
+            <input type="range" name="nivel urgencia" min="0" max="10">
+            <input type="checkbox" name="dia-da-semana" value="1">
+            <input type="radio" name="manha" value="manha">
+            <textarea name="area de texto" cols="30" rows="10">
+                Texto padrão (value)
+            </textarea>
         </form>
     </body>
 </html>
