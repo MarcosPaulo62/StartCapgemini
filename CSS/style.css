@@ -1,0 +1,35 @@
+h1{
+    color: gray;
+}
+
+main h1{
+    color: darkblue;
+}
+
+.titulo-aula{
+    text-decoration: underline;
+}
+
+.txt-blue{
+    color: blue;
+}
+
+.txt-red{
+    color: red;
+}
+
+#titulo-primeira{
+    text-decoration: underline dashed;
+}
+
+#titulo-segunda{
+    text-decoration: underline wavy;
+}
+
+.comentario{
+    color: red;
+}
+
+.txt-red .comentario{
+    color: blue;
+}
