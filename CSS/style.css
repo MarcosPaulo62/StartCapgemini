@@ -1,5 +1,9 @@
 html{
-    color: blue;
-    color: rgba(0, 0, 150, 1);
-    color: #0000FF;
+    height: 100%;
+    color: aqua;
+    background-color: rgba(138, 43, 226, 1);
+    background-image: url("cachorro.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
