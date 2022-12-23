@@ -1,61 +1,32 @@
-/* html{
-    height: 100%;
-    color: aqua;
-    background-color: rgba(138, 43, 226, 1);
-    background-image: url("cachorro.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-} */
-
-/* @font-face{
-    font-family: alexbrush;
-    src: url("AlexBrush-Regular.ttf");
+body{
+    background-color: black;
+    margin: 0;
 }
 
-main{
-    font-family: alexbrush, cursive;
-} */
-
-main{
-    font-style: italic;   
-    font-weight: bold;
-    font-size: 1rem;
+.box{
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 3em;
+    padding: 15px;
+    border: 2px solid yellow;
+    margin: 15px;
+    margin: 10px 0 20px 30px;
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 20px;
+    margin-left: 30px;
 }
 
-main p{
-    text-indent: 2rem; /* Define espaço de identação do texto */
-    text-align: left; /* (Padrão) Texto alinhado a esquerda */
-    text-transform: uppercase; /* Todas as letras maiúsculas */
+.vermelho{
+    background-color: red;
 }
 
-h1, h2, h3{
-    text-align: center; /* Texto centralizado */
+.verde{
+    background-color: green;
 }
 
-h2#titulo-primeira{
-    text-decoration: overline; /* Linha sobre o texto */
-    letter-spacing: 1rem; /* Espaçamento entre as letras */
-}
-
-a{
-    background-color: aquamarine;
-    color: blue;
-    text-decoration: none;
-    cursor: help;
-}
-
-a:active{ /* Quando o mouse está clicado */
+.azul{
     background-color: blue;
-    color: white;
-}
-
-a:visited{ /* Quando o link já foi visitado */
-    background-color: aqua;
-    color: blueviolet;
-}
-
-a:hover{ /* Quando passar o mouse sobre (hover serve pra qualquer elemento) */
-    background-color: blueviolet;
-    color: white;
 }
