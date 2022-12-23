@@ -1,12 +1,12 @@
-html{
-    /* height: 100%;
+/* html{
+    height: 100%;
     color: aqua;
     background-color: rgba(138, 43, 226, 1);
     background-image: url("cachorro.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; */
-}
+    background-size: cover;
+} */
 
 /* @font-face{
     font-family: alexbrush;
@@ -19,8 +19,21 @@ main{
 
 main{
     font-style: italic;   
-
     font-weight: bold;
-
     font-size: 1rem;
+}
+
+main p{
+    text-indent: 2rem; /* Define espaço de identação do texto */
+    text-align: left; /* (Padrão) Texto alinhado a esquerda */
+    text-transform: uppercase; /* Todas as letras maiúsculas */
+}
+
+h1, h2, h3{
+    text-align: center; /* Texto centralizado */
+}
+
+h2#titulo-primeira{
+    text-decoration: overline; /* Linha sobre o texto */
+    letter-spacing: 1rem; /* Espaçamento entre as letras */
 }
