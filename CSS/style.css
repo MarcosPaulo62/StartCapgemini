@@ -37,3 +37,25 @@ h2#titulo-primeira{
     text-decoration: overline; /* Linha sobre o texto */
     letter-spacing: 1rem; /* Espaçamento entre as letras */
 }
+
+a{
+    background-color: aquamarine;
+    color: blue;
+    text-decoration: none;
+    cursor: help;
+}
+
+a:active{ /* Quando o mouse está clicado */
+    background-color: blue;
+    color: white;
+}
+
+a:visited{ /* Quando o link já foi visitado */
+    background-color: aqua;
+    color: blueviolet;
+}
+
+a:hover{ /* Quando passar o mouse sobre (hover serve pra qualquer elemento) */
+    background-color: blueviolet;
+    color: white;
+}
