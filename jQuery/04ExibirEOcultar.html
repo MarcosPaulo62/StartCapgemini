@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Exibir e Ocultar</title>
+
+        <!-- jQuery -->
+        <script src="jquery-3.6.3.min.js"></script>
+
+        <!-- Script -->
+        <script>
+
+            // Ao carregar o documento
+            $(document).ready(function(){
+
+                // Exibir 
+                $("#exibir").click(function(){
+                    $("img").show();
+                });
+                
+                // Ocultar 
+                $("#ocultar").click(function(){
+                    $("img").hide();
+                });
+
+                // Exibir / Ocultar
+                var imagem = true;
+                $("#exibirOcultar").click(function(){
+                    if(imagem){
+                        $("img").hide();
+                        imagem = false;
+                    } else if (imagem == false){
+                        $("img").show();
+                        imagem = true;
+                    }                    
+                });
+
+            });
+
+        </script>
+
+    </head>
+
+    <body>
+
+        <button id="exibir">Exibir</button>
+        <button id="ocultar">Ocultar</button>
+        <button id="exibirOcultar">Exibir/Ocultar</button>
+        
+        <br>
+
+        <img src="logo.png" style="width: 300px; 
+                                   background-color: #2B0A3D;
+                                   padding: 25px;">
+        
+    </body>
+</html>
