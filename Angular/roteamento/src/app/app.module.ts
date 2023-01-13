@@ -10,6 +10,7 @@ import { PginaNaoEncontradaComponent } from './pgina-nao-encontrada/pgina-nao-en
 import { PaginaComParametrosComponent } from './pagina-com-parametros/pagina-com-parametros.component';
 import { PaginaProtegidaComponent } from './pagina-protegida/pagina-protegida.component';
 import { LoginComponent } from './login/login.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { LoginComponent } from './login/login.component';
   imports: [
     BrowserModule,
     AppRouteModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
