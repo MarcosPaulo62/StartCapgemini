@@ -1,0 +1,50 @@
+<form class="bg-secondary p-3 action=">
+    <div class="d-inline-block m-2">
+        <label class="m-1 fw-bold" for="nome">Nome: </label>
+        <input class="form-control" type="text" name="nome" [(ngModel)]="nome">
+    </div>
+    <div class="d-inline-block m-2">
+        <label class="m-1 fw-bold" for="nota1">1ª nota: </label>
+        <input class="form-control" type="text" name="nota1" [(ngModel)]="nota1">
+    </div>
+    <div class="d-inline-block m-2">
+        <label class="m-1 fw-bold" for="nota2">2ª nota: </label>
+        <input class="form-control" type="text" name="nota2" [(ngModel)]="nota2">
+    </div>
+    
+    <button type="button" (click)="adicionarAluno()" class="btn btn-dark p-2 mb-2">Adicionar</button>
+</form>
+
+<table class="table table-dark table-borderless">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th>Média</th>
+            <th>Condição</th>
+            <th>Editar</th>
+            <th>Excluir</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let aluno of notasAlunos">
+            <td> {{ aluno.nome }} </td>
+            <td> {{ aluno.nota1 }} </td>
+            <td> {{ aluno.nota2 }} </td>
+            <td> {{ aluno.media }} </td>
+            <td [ngClass]="aluno.condicao == 'Aprovado'? 'bg-success' : 'bg-danger'"> {{ aluno.condicao }} </td>
+            <td>
+                <i class="fa-sharp fa-solid fa-pen-to-square"
+                (click)="editarAluno(aluno.identificador, aluno.nome, aluno.nota1, aluno.nota2)"
+                ></i>
+            </td>
+            <td>
+                <i class="fa-sharp fa-solid fa-xmark"
+                    (click)="removerAluno(aluno.identificador)"           
+                ></i>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
