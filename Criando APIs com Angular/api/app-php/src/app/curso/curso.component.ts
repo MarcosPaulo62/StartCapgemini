@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Curso } from './curso';
 
 @Component({
   selector: 'app-curso',
@@ -7,14 +9,38 @@ import { Component } from '@angular/core';
 })
 export class CursoComponent {
 
-  nome: string = "Ralf";
+  //URL base
+  url = "http://localhost/api/php/";
+
+  //Vetor de cursos
+  vetor: Curso[] = [];
 
   //Construtor
-  constructor() { }
+  constructor(private http:HttpClient) { }
 
   //Inicializador
   ngOnInit() {
 
+  }
+
+  //Cadastro
+  cadastro():void {
+    alert("Cadastro");
+  }
+
+  //Seleção
+  selecao():void {
+    alert("Seleção");
+  }
+
+  //Alterar
+  alterar():void {
+    alert("Alterar");
+  }
+
+  //Remover
+  remover():void {
+    alert("Remover");
   }
 
 }
