@@ -21,6 +21,7 @@ export class PrincipalComponent {
   nome = "";
   nota1!: number;
   nota2!: number;
+  limparNota!: number;
   media = 0;
   condicao = "";
 
@@ -43,8 +44,8 @@ export class PrincipalComponent {
     );
 
     this.nome = "";
-    this.nota1 = 0;
-    this.nota2 = 0;
+    this.nota1 = this.limparNota;
+    this.nota2 = this.limparNota;
 
     console.log(this.notasAlunos);
   }

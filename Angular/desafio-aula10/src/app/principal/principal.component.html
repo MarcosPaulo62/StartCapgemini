@@ -11,7 +11,7 @@
         <label class="m-1 fw-bold" for="nota2">2ª nota: </label>
         <input class="form-control" type="text" name="nota2" [(ngModel)]="nota2">
     </div>
-    
+
     <button type="button" (click)="adicionarAluno()" class="btn btn-dark p-2 mb-2">Adicionar</button>
 </form>
 
@@ -41,7 +41,7 @@
             </td>
             <td>
                 <i class="fa-sharp fa-solid fa-xmark"
-                    (click)="removerAluno(aluno.identificador)"           
+                    (click)="removerAluno(aluno.identificador)"
                 ></i>
             </td>
         </tr>
