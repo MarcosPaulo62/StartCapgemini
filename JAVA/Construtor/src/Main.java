@@ -15,5 +15,9 @@ public class Main {
 
         // Imprimindo situação do aluno
         System.out.println("A média do aluno é: " + aluno.calcularMediaAluno() + " e o aluno está " + aluno.situacaoAluno);
+
+        // Usa enum MATRICULA
+        aluno.situacaoMatricula = Aluno.MATRICULA.MATRICULADO;
+        System.out.println("O Aluno está: " + aluno.situacaoMatricula);
     }
 }

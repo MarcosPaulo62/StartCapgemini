@@ -3,6 +3,7 @@ public class Aluno {
     private double nota2;
     private double nota3;
     STATUS situacaoAluno;
+    MATRICULA situacaoMatricula;
 
     // Construtor
     public Aluno(double nota1, double nota2, double nota3) {
@@ -12,6 +13,12 @@ public class Aluno {
     }
 
     // DEFININDO UM ENUMERADOR
+    public enum MATRICULA {
+        MATRICULADO,
+        PENDENTE,
+        RECUSADO
+    }
+
     public enum STATUS {
         APROVADO,
         REPROVADO
